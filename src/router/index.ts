@@ -21,26 +21,26 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Gallery.vue')
-  },
-  {
-    path: '/ourworld',
-    name: 'Ourworld',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Ourworld.vue')
-
-  },
-  {
-    path: '/homepage',
-    name: 'Homepage',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Homepage.vue')
-
+    component: () => import(/* webpackChunkName: "about" */ '../views/Gallery/Gallery.vue')
   }
+  // {
+  //   path: '/ourworld',
+  //   name: 'Ourworld',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (about.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/Ourworld.vue')
+
+  // },
+  // {
+  //   path: '/homepage',
+  //   name: 'Homepage',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (about.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "about" */ '../views/Homepage.vue')
+
+  // }
 ]
 
 const router = createRouter({

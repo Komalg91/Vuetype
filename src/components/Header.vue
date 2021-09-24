@@ -56,7 +56,7 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    // // overflow-y: scroll;
+    overflow-y: scroll;
     height: 100%;
 }
 html{
@@ -78,7 +78,7 @@ html{
     top: 0;
     left: 0;   
     position: absolute;
-    padding: 0% 7%; 
+    padding: 0% 7%;
 }
 .nav_header {
   
@@ -100,21 +100,22 @@ html{
     z-index: 100;
     transition: background-color 1s ease 0s;
   }
-li {
+.nav_header li {
     font-size: 0.75rem;
 }
-ul{
+.nav_header ul{
     margin: 0;
 }
-.nav_header a{
-    display: block;
-}
+// .nav_header a{
+//     display: block;
+// }
 .nav_li_link{
     color: #490D40;
 }
 .nav_header a{
-  display: inline-block;
-  position: relative;
+//   display: inline-block;
+    display: block;
+    position: relative;
 }
 
 .nav_header a:after {
@@ -154,6 +155,17 @@ ul{
 .hamburger span:nth-child(3){
     width: 60%;
     margin-left: auto;
+}
+@media screen and (max-width:500px) {
+    .nav_header ul{
+        flex-direction: column;
+    }
+    .nav_header li{
+        font-size: 14px;
+    }
+    .left_header img{
+    width: 10vw;
+}
 }
 
 </style>
