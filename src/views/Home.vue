@@ -15,4 +15,11 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
   },
 })
 export default class Home extends Vue {}
+
+// npm install vue bootstrap bootstrap-vue
+// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+// Vue.use(BootstrapVue)
 </script>
+
+
+

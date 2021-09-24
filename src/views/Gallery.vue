@@ -1,24 +1,6 @@
 <template>
   <div class="gallery_container">
-     <header class="gallery_header">
-        <div class="left_header">
-            <span class="discovery_header_text1">Discovery</span>
-            <span class="discovery_header_text2">Land Company</span>
-
-        </div>
-        
-        <nav class="nav_header">
-            <ul class="nav_ul">
-                <li class="nav_li"><a href="#"> About</a></li>
-                <li class="nav_li"><a href="#">Our World</a></li>
-                <li class="nav_li"><a href="#">Experiences</a></li>
-                <li class="nav_li"><a href="#">Gallery</a></li>
-                <li class="nav_li"><a href="#">Press</a></li>
-
-            </ul>
-        </nav>
-        
-    </header>
+     <Header/>
     <main>
         <article>
             <div class="header_bg_img">
@@ -27,58 +9,65 @@
         </article>
         <article class="gallery_item1">
             
-            <article class="gallery_item1_content">
-                <a href="#">
+            <article class="gallery_item1_content" v-for="(items,index) in img_array" :key="index">
+                <a href="#"> 
                     <figure class="gallery_item_figure">
-                        <img src="https://dxaurk9yhilm4.cloudfront.net/images/7390/Stocksy_txp3615512ad2e200_OriginalDelivery_1580323-1_210301_201432_d169f13de117664acdaa1543841b7c16.jpg" alt="Nature Image" srcset="">               
+                        <img :src="items.gallery_image" alt="" srcset="">
+ 
                     </figure>
-                    <h2 class="gallery_item_text">Outdoor Pursuits</h2>
-                </a>
-            </article>
-            <article class="gallery_item1_content">
-                <a href="#">
-                    <figure class="gallery_item_figure">
-                        <img src="https://dxaurk9yhilm4.cloudfront.net/images/7386/img_210122_130752_1_d169f13de117664acdaa1543841b7c16.jpg" alt="Nature Image" srcset="">
-                    </figure>
-                    <h2 class="gallery_item_text">Golf</h2>
-                </a>
-            </article>
-            <article class="gallery_item1_content">
-                <a href="#">
-                    <figure class="gallery_item_figure">
-                        <img src="https://dxaurk9yhilm4.cloudfront.net/images/7394/preview-30_210301_201612_d169f13de117664acdaa1543841b7c16.jpeg" alt="Nature Image" srcset="">
-                    </figure>
-                    <h2 class="gallery_item_text">Lifestyle</h2>
-                </a>
-            </article>
-            <article class="gallery_item1_content">
-                <a href="#">
-                    <figure class="gallery_item_figure">
-                        <img src="https://dxaurk9yhilm4.cloudfront.net/images/7398/Playa-Grande14_DJI_0965-1-1_210301_201716_d169f13de117664acdaa1543841b7c16.jpg" alt="Nature Image" srcset="">               
-                    </figure>
-                    <h2 class="gallery_item_text">Landscapes</h2>
-                </a>
-            </article>
-            <article class="gallery_item1_content">
-                <a href="#">
-                    <figure class="gallery_item_figure">
-                        <img src="https://dxaurk9yhilm4.cloudfront.net/images/7406/Wellness-gallery-1_11014826b3e36b3697374f276a89b517-2_210301_202121_d169f13de117664acdaa1543841b7c16.jpg" alt="Nature Image" srcset="">
-                    </figure>
-                    <h2 class="gallery_item_text">Clubhouses</h2>
-                </a>
-            </article>
-            <article class="gallery_item1_content">
-                <a href="#">
-                    <figure class="gallery_item_figure">
-                        <img src="https://dxaurk9yhilm4.cloudfront.net/images/7402/golf-club-house_d3867277feb154defec9b24a5714fadb-1_210301_201855_d169f13de117664acdaa1543841b7c16.jpg" alt="Nature Image" srcset="">
-                    </figure>
-                    <h2 class="gallery_item_text">Wellness</h2>
+                    <h2 class="gallery_item_text">{{items.gallery_text}}</h2>
                 </a>
             </article>
         </article>
     </main>
+    <Footer/>
   </div>
 </template>
+
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
+
+@Options({
+    components:{
+        Header, Footer
+    }
+})
+export default class Gallery extends Vue {
+    data() {
+        return{
+            img_array: [
+                {
+                    gallery_image: require("../assets/gallery/outdoor.jpg"),
+                    gallery_text: "Outdoor Pursuits"
+                },
+                {
+                    gallery_image: require("../assets/gallery/golf.jpg"),
+                    gallery_text: "Golf"
+                },
+                {
+                    gallery_image: require("../assets/gallery/lifestyle.jpeg"),
+                    gallery_text: "Lifestyle"
+                },
+                {
+                    gallery_image: require("../assets/gallery/landscapes.jpg"),
+                    gallery_text: "Landscapes"
+                },
+                {
+                    gallery_image: require("../assets/gallery/clubhouses.jpg"),
+                    gallery_text: "Clubhouses"
+                },
+                {
+                    gallery_image: require("../assets/gallery/wellness.jpg"),
+                    gallery_text: "Wellness"
+                }
+            ]
+        }
+    }
+}
+</script>
 
 <style lang="scss">
 body{
@@ -98,6 +87,13 @@ html{
 //     min-width: 100%;
 
 // }
+
+figure{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
 .header_bg_img{
     background-color: #490D40;
    background: url(https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg) no-repeat center center;
@@ -109,53 +105,6 @@ html{
     overflow: hidden;
     display: flex;
     align-items: center;
-}
-.gallery_header{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;    
-    height: 8.1rem;
-    top: 0;
-    left: 0;   
-    position: fixed;
-    padding: 0% 7%; 
-}
-.nav_header {
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
-.nav_ul{
-    display: flex;
-    padding: 0;
-}
-.nav_li{
-    list-style: none;
-    margin-right: 1.5rem;
-    display: block;  
-}
-.gallery_header, .gallery_header a{
-  color: #fff;
-  z-index: 100;
-  transition: background-color 1s ease 0s;
-  }
-li {
-    font-size: 0.75rem;
-}
-ul{
-    margin: 0;
-}
-.nav_header a{
-    display: block;
-}
-figure{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
 }
 .gallery_item1{
     display: grid;
@@ -184,11 +133,14 @@ a{
     text-decoration: none;
 }
 
+
 @media screen and (max-width: 1000px){
     .gallery_item1{
         grid-template-columns: repeat(2,1fr);
     }
+   
 }
+
 @media screen and (max-width: 500px){
     .gallery_item1{
         grid-template-columns: repeat(1,1fr);
