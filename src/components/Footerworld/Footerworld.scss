@@ -1,0 +1,32 @@
+.section7 img{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.section7{
+    background: #000;
+    position: relative;
+    
+      
+}
+.section7 img{
+    opacity: 0.6;
+}
+.text1_foot {
+    z-index: 100;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 1.9rem;
+    left: 50%;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .explore_btn_footer{
+    padding: 7% 20%;
+    background-color: transparent;
+    border-color: #f3f3f3;
+    color: #FFFFFF;
+}

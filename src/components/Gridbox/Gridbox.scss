@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+
+.section2_container{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10vh;
+
+}
+.row_exp{
+    // padding-left: 12vw;
+    // padding-right: 12vw;
+    // padding-bottom: 12vh;
+    width: 80%;
+    margin: 0 auto;
+}
+.section2{
+    // display: flex;
+    // align-content: center;
+    // align-items: center;
+    // justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+}
+.section2_left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.para2 p{
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #777;
+
+}
+.para2 p:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+.section2 h2{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 4%;
+    font-family: 'Spectral', serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 500;
+
+}
+// .secton2_left{
+//     width: 100%;
+// }
+// .section2_right{
+//     width: 100%;
+//     height: 100%;
+// }
+.section2_right{
+    width: 100%;
+    height: auto;
+}
+.section2_right img{
+    width: 100%;
+    height: auto;
+}
+// 
+
+@media screen and (max-width:1000px) {
+    .section2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    // .section2_right img{
+    //     width: 70%;
+    // }
+    .section2_left{
+        max-width: 70%;
+        width: 100%;
+        margin: 0 auto;
+        order: 2;
+        padding-bottom: 15vh;
+    }
+   
+    
+
+}
+@media screen and (max-width:900px){
+    .section2 h2{
+        font-size: 1.5rem;
+    }
+    .para2 p{
+         font-size: 0.72rem;
+    }
+    .section2_left{
+        padding-bottom: 15vh;
+    }
+}
+@media screen and (max-width:500px) {
+    .section1_container{
+        padding:  calc(4rem * 0.75) 9vw;
+    }
+    .para1 p{
+        text-align: left;
+    }
+    .section2_right img{
+        width: 100%;
+    }
+    .section2_left{
+        width: 100%;
+        padding-bottom: 15vh;
+
+    } 
+    
+}

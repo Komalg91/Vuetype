@@ -1,0 +1,35 @@
+.section1_container{
+    padding: calc(10rem * 0.75) 9vw  ;
+}
+.para1 p{
+    text-align: center;
+    font-family: 'Spectral', serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 500;
+    
+}
+
+@media screen and (max-width: 1000px){
+    .para1 p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .para1 p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .para1 p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .para1 p{
+        font-size: 0.8rem;
+    }
+}

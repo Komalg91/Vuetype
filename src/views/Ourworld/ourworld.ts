@@ -1,7 +1,7 @@
 import { Options, Vue } from 'vue-class-component';
 
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
+import Header from '@/components/Header/Header.vue';
+import Footer from '@/components/Footer/Footer.vue';
 
 @Options({
     components:{
@@ -124,6 +124,11 @@ export default class Gallery extends Vue {
                 },
                 {
                     world_image: require("../../assets/ourworld/cordevalle.jpg"),
+                    world_text1: "north shore preserve",
+                    world_text2: "kauai, hawaii"
+                },
+                {
+                    world_image: require("../../assets/ourworld/estancia.jpg"),
                     world_text1: "north shore preserve",
                     world_text2: "kauai, hawaii"
                 },
