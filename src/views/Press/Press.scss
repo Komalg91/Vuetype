@@ -1,0 +1,131 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    // // overflow-y: scroll;
+    height: 100%;
+}
+html{
+    font-size: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+.header_bg_img{
+    background: #000;
+   background: url(https://dxaurk9yhilm4.cloudfront.net/images/889/DJI_0161-copy_2cbd80a0345be3b5a0b7649a1a2d057f.jpg) no-repeat center center;
+   background-size: cover;
+   height: 100vh;
+ 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+
+
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.header_bg_img img{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;  
+}
+
+.image_opacity{
+    background: #000;
+    position: relative;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+    // align-items: center;
+}
+
+
+.text{
+    color: #FFFFFF;
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    margin-bottom: 2rem;
+    font-size: 4.5vw;  
+    line-height: 2;
+    animation: textanimation 1s linear;
+
+}
+
+.text1{
+    font-weight: 200;
+    font-family: 'Spectral', serif;
+    // text-align: center;
+}
+.text2{
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes textanimation {
+    0% {
+        opacity: 0;    
+        transform:translate3d(0,25%,0);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.press_container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.news_section{
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+.news_row{
+   
+    // width: 90%;
+    // margin: 0 auto;
+    background-color: pink;
+    padding-bottom: 15vh;
+}
+
+.news_content{
+    width: 100%;
+}
+
+.news_content img{
+    // width: 90%;
+    height: 100vh;
+
+}
+.row{
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 20%;
+}
+.section3_container{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    padding-bottom: 50vh;
+}
+
+.section3_content{
+    width: 90%;
+    margin: 0 auto;
+}
