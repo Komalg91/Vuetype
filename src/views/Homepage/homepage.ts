@@ -282,18 +282,4 @@ export default class Homepage extends Vue {
             ];
 
             selectedValue = this.globe_array[1];
-            count= 0;
-            id= 0;
-            leftclick(selectedValue: number){
-                if(selectedValue==1){
-                    this.count = this.globe_array.length;
-                }
-                else{
-                    this.count = selectedValue - 1;
-                    console.log(this.count)
-                }
-                this.id = this.count;
-                this.selectedValue = this.globe_array[this.id];
-
-            }
 }

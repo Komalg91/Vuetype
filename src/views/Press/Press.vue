@@ -17,6 +17,21 @@
             </div>
         </div>
         </div>
+        <div class="section2_press_container">
+            <div class="title_press">Press</div>
+            <div class="section2_press_content">
+                <div class="press_row" v-for="(item,index) in news_array" :key="index">
+                    <div class="head1_press">
+                            <h2>{{item.head1}}</h2>                    
+                    </div>
+                    <div class="head2_press">
+                        {{item.head2}}
+                    </div>
+                    <button type="submit" class="explore_btn_footer">Read Article</button>
+
+                </div>
+            </div>
+            </div>
         <Footer />
     </div>
 </template>

@@ -52,7 +52,7 @@
             </div>
             <div class="section_row3">
                 <div class="slider_row">
-                    <article class="row3_content" v-for="(items,index) in img_array" :key="index">
+                    <article class="row3_content" v-for="(items,index) in globe_array" :key="index">
                         <a href="#"> 
                             <figure class="row3_figure">
                                 <img :src="items.world_image" alt="" srcset="">

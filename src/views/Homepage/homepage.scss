@@ -26,7 +26,7 @@ html{
     color: #FFFFFF;
     font-size: 1rem;
     // left: 150px;
-    top: 60%;  
+    top: 50%;  
     text-transform: capitalize;
   }
   #world_item_text2{
@@ -36,12 +36,17 @@ html{
     font-size: 0.7rem;
     // left: 150px;
     text-transform: capitalize;
-    top: 70%;  
+    top: 60%;  
 }
 
   .content{
     
-    padding: 2.5rem 2.5rem ;
+    // padding: 2.5rem 2.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
   }
 .video_bg{
     margin: 0;
@@ -257,6 +262,7 @@ button{
 .globe_row2{
     padding-bottom: 15vh;
 }
+
 $animationSpeed: 40s;
 
 // Animation
@@ -345,6 +351,26 @@ $animationSpeed: 40s;
 //     height: 100%;
 //     width: 100%;
 // }
+@media screen and (max-width:1000px) {
+    .globe_box{
+        width: 100%; 
+        top: 70%;
+        left: 0%;
+    }
+    .globe_img img{
+        width: 100%;
+    }
+    .home_section2_container{
+        padding-top: 50vh;
+    }
+    .section_row3 .slider_row img{
+        width: 45vw;
+    }
+    #world_item_text2{
+        font-size: 0.6rem;
+    }
+}
+
 
 @media screen and (max-width: 700px) {
     .row2_content{
@@ -384,20 +410,16 @@ $animationSpeed: 40s;
         font-size: 0.5rem;
         
     }
+    #world_item_text1{
+        font-size: 0.6rem;
+    }
+    .section_row3 .slider_row img{
+        width: 55vw;
+    }
     
 }
-
-@media screen and (max-width:1000px) {
-    .globe_box{
-        width: 100%; 
-        top: 70%;
-        left: 0%;
-    }
-    .globe_img img{
-        width: 100%;
-    }
-    .home_section2_container{
-        padding-top: 50vh;
+@media screen and (max-width:500px) {
+    .section_row3 .slider_row img{
+        width: 70vw;
     }
 }
-

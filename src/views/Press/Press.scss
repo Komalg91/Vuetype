@@ -122,10 +122,84 @@ html{
     padding: 0;
     background-color: #f3f3f3;
     overflow: hidden;
-    padding-bottom: 50vh;
+    padding-bottom: 12vh;
 }
 
 .section3_content{
     width: 90%;
     margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.title_press{
+    font-size: 2rem;
+    font-family: 'Spectral', serif;
+    padding: 10vh 10vw ;
+    text-align: left;
+}
+.section2_press_container{
+    padding-bottom: 15vh;
+}
+.section2_press_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4.5rem 20%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.head1_press h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+.head2_press{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.explore_btn_footer{
+    margin-top: 3rem;
+    padding: 7% 20%;
+    background-color: transparent;
+    border-color: #f3f3f3;
+    color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+    .head1_press h2{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .head1_press h2{
+        font-size: 1rem;
+    }
+    .head2_press{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section2_press_content{
+        grid-template-columns: repeat(1,1fr);
+        gap: 4.5rem;
+     
+    }
+    .explore_btn_footer{
+        margin-top: 1rem;
+        padding: 5% 12%;
+        
+    }
+    .head1_press h2{
+        font-size: 0.8rem;
+    }
+    .head2_press{
+        font-size: 0.6rem;
+    }
+    
 }

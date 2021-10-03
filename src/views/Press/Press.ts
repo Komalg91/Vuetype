@@ -31,6 +31,84 @@ export default class Press extends Vue{
                 },
 
             ],
+            news_array: [
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                },
+                {
+                    head1: "Golf Real Estate Roars Back as Vacation Homes Boom in Pandemic",
+                    head2: "Bloomberg | September 2021"
+                }
+            ]
         }
     }
 }
