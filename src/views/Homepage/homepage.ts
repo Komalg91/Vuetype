@@ -2,14 +2,23 @@ import { Options, Vue } from 'vue-class-component';
 
 import Header from '@/components/Header/Header.vue';
 import Footer from '@/components/Footer/Footer.vue';
+import Video from '@/components/Video/Video.vue';
+
 
 @Options({
     components:{
-        Header, Footer
+        Header, Footer, Video
     }
 })
 export default class Homepage extends Vue {
-           public globe_array = [
+            public video_home = 
+                {
+                    video_title1: "Discover",
+                    video_title2: "your world",
+                    video_src: "https://player.vimeo.com/external/536055631.hd.mp4?s=7f6a254bdf972674127e5909312fa5de8b8d2453&profile_id=174&download=1"
+                }
+            
+            public globe_array = [
                 {
                     
                     world_image: require("../../assets/ourworld/northshore.jpg"),
@@ -28,8 +37,8 @@ export default class Homepage extends Vue {
                     world_text1: "james island",
                     world_text2: "southern gulf islands, british columbia, canada",
                     id: 2,
-                    weather: 52,
-                    wind: 9.82,
+                    weather: 53,
+                    wind: 9.85,
                     compass: 238,
                     geon: 45.26,
                     geow: 111.
@@ -39,8 +48,8 @@ export default class Homepage extends Vue {
                     world_text1: "costaterra",
                     world_text2: "comporta, portugal",
                     id: 3,
-                    weather: 52,
-                    wind: 9.82,
+                    weather: 50,
+                    wind: 9.00,
                     compass: 238,
                     geon: 45.26,
                     geow: 111
@@ -50,8 +59,8 @@ export default class Homepage extends Vue {
                     world_text1: "barbuda ocean club",
                     world_text2: "barbuda, west indies",
                     id: 4,
-                    weather: 52,
-                    wind: 9.82,
+                    weather: 48,
+                    wind: 8.91,
                     compass: 238,
                     geon: 45.26,
                     geow: 111
@@ -268,7 +277,7 @@ export default class Homepage extends Vue {
                 },
                 {
                     world_image: require("../../assets/ourworld/estancia.jpg"),
-                    world_text1: "north shore preserve",
+                    world_text1: "north shore",
                     world_text2: "kauai, hawaii",
                     id: 24,
                     weather: 52,
@@ -281,5 +290,29 @@ export default class Homepage extends Vue {
                 
             ];
 
-            selectedValue = this.globe_array[1];
+            selectedValue = this.globe_array[0];
+            leftclick(n: number) :void{
+                if(n>=1){
+                    const data = n-2;
+                    this.selectedValue = this.globe_array[data]; 
+                    console.log(data);
+                }
+                else{
+                    this.selectedValue = this.globe_array[this.globe_array.length];
+                    console.log(this.globe_array.length);
+                    // const data = n-1;
+                    // this.selectedValue = this.globe_array[data];
+                }
+            }         
+            rightclick(n: number) :void{
+                if(n<this.globe_array.length){
+                    const data = (n);
+                    this.selectedValue = this.globe_array[data];
+                    console.log(data);
+                }
+                else{
+                    this.selectedValue = this.globe_array[0];
+                }
+            }            
+            
 }

@@ -1,4 +1,6 @@
-.video_bg{
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+
+.image_bg{
     margin: 0;
     padding: 0;
     top: 0;
@@ -10,7 +12,7 @@
     display: flex;
     align-items: center;
 }
-.video_bg video{
+.image_bg img{
     margin: 0;
     padding: 0;
     min-width: 100%;
@@ -19,7 +21,7 @@
     object-fit: cover;  
     position: relative; 
 }
-.video_opacity{
+.image_opacity{
     background: #000;
     position: relative;
     // display: flex;
@@ -27,7 +29,7 @@
     // align-content: center;
     // align-items: center;
 }
-.video_opacity video{
+.image_opacity img{
     opacity: 0.6;
 }
 

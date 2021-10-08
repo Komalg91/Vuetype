@@ -6,9 +6,9 @@ body{
     // // overflow-y: scroll;
     height: 100%;
 }
-html{
-    font-size: 20px;
-}
+// html{
+//     font-size: 20px;
+// }
 *{
     box-sizing: border-box;
 }
@@ -43,7 +43,7 @@ figure{
     color: #fff;
     font-family: 'Martel Sans', sans-serif;
     margin: 1rem 0 0 0;
-    font-size: 0.85rem;
+    font-size: 1rem;
     white-space: nowrap;
     text-transform: uppercase;
     line-height: 1.1;
@@ -53,7 +53,7 @@ figure{
     color: #777;
     font-family: 'Martel Sans', sans-serif;
     margin: 0.2rem 0 0 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: capitalize;
     line-height: 1.3;
 }

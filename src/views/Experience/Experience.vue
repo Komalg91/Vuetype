@@ -2,7 +2,7 @@
     <div class="experience_container">
         <Header />
         <main>
-            <Video />
+            <Video v-bind:video_comp="video_exp"/>
             <Para  v-bind:paralists="para_text_exp" />
             <Gridbox v-bind:gridboxlist="grid_exp_obj"/>
               <!-- <div class="section2_container">
@@ -23,14 +23,14 @@
                 </div> 
                 </div>
             </div>  -->
-            <div class="experience_container">
+            <!-- <div class="experience_container"> -->
             <div class="section3_container">
                 <div class="section3_content">
                     <div class="row" v-for="(items, index) in box_data" :key="index">
                         <Box v-bind:itemlist="items"/>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
             </div>
             <Footerworld />
         </main>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+
 body{
     padding: 0;
     margin: 0;
@@ -5,9 +7,9 @@ body{
     // // overflow-y: scroll;
     height: 100%;
 }
-html{
-    font-size: 20px;
-}
+// html{
+//     font-size: 20px;
+// }
 *{
     box-sizing: border-box;
 }
@@ -27,7 +29,7 @@ figure{
    background: url(https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg) no-repeat center center;
    background-size: cover;
    height: 65vh;
-   margin-top: -20px;
+//    margin-top: -20px;
  
 //     // position: relative;
     overflow: hidden;
@@ -61,6 +63,30 @@ a{
     text-decoration: none;
 }
 
+.gallery_title{
+    font-family: 'Spectral', serif;
+    color: #FFFFFF;
+    z-index: 2;
+    position: absolute;
+    // top: 40%;
+    left: 15%;
+    margin-bottom: 2rem;
+    font-size: 4rem;  
+    line-height: 2;
+    animation: textanimation 1s linear;
+
+}
+
+@keyframes textanimation {
+    0% {
+        opacity: 0;    
+        transform:translate3d(0,25%,0);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 @media screen and (max-width: 1000px){
     .gallery_item1{
@@ -68,10 +94,25 @@ a{
     }
    
 }
-
+@media screen and (max-width: 700px){
+    .gallery_title{
+        font-size: 3rem;
+    }
+   
+}
 @media screen and (max-width: 500px){
     .gallery_item1{
         grid-template-columns: repeat(1,1fr);
     }
+    .gallery_title{
+        font-size: 2.8rem;
+    }
 }
+@media screen and (max-width: 300px){
+    .gallery_title{
+        font-size: 2.3rem;
+    }
+   
+}
+
 

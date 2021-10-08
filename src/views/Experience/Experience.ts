@@ -16,6 +16,12 @@ import Footerworld from '@/components/Footerworld/Footerworld.vue';
 export default class Experience extends Vue{
     data(){
         return{
+            video_exp: 
+                {
+                    video_title1: "Unforgettable",
+                    video_title2: "experiences",
+                    video_src: "https://dxaurk9yhilm4.cloudfront.net/experiences_hero.mp4?mtime=20190609072805"
+                },
             box_data: [
                 {
                     box_head: "Golf",
@@ -37,7 +43,8 @@ export default class Experience extends Vue{
 
             para_text_exp: "Memorable days. Exceptional nights. We believe it’s our mission to make every minute matter. So you can live your life to the fullest, with the people closest to you.",
             grid_exp_obj:{
-                head_expgrid: "Exclusive to our world ",
+                head_expgrid: "Exclusive to ",
+                head2_expgrid: "your world ",
                 para1_expgrid: "Our worlds are designed to offer you endless opportunities to share incredible once-in-a-lifetime experiences and adventures every single minute of the day. Each of our settings offers a relaxed sense of community through exceptional clubhouses, world-class golf courses, welcoming staff and an extensive Outdoor Pursuits program. Create moments of joy and wonder, unforgettable memories and cherished times, together with those who matter most.",
                 para2_expgrid: "",
                 img_expgrid: require('../../assets/exp_1.jpg')

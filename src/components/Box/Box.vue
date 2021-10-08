@@ -3,8 +3,8 @@
         <div class="row1_item">
             <div class="section3_img1">
                 <img :src="itemlist.box_img" alt="" srcset="">
+                <div class="section3_img2"></div>
             </div>
-            <div class="section3_img2"></div>
         </div>
         <div class="row1_item1">
             <div class="section3_box2">

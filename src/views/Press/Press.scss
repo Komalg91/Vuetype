@@ -5,9 +5,9 @@ body{
     // // overflow-y: scroll;
     height: 100%;
 }
-html{
-    font-size: 20px;
-}
+// html{
+//     font-size: 20px;
+// }
 *{
     box-sizing: border-box;
 }
@@ -112,22 +112,34 @@ html{
     height: 100vh;
 
 }
+.row2{
+    text-align: left;
+    padding: 12vh 10vw 0 10vw;
+}
+.row2 h3{
+    margin: 0;
+    font-family: 'Spectral', serif;
+    font-size: 2.7rem;
+    font-weight: 200;
+}
 .row{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    margin-left: 20%;
+    padding-top: 10vh;
+    // margin-left: 20%;
 }
 .section3_container{
     margin: 0;
     padding: 0;
     background-color: #f3f3f3;
     overflow: hidden;
-    padding-bottom: 12vh;
+    // padding-bottom: 12vh;
 }
 
 .section3_content{
     width: 90%;
     margin: 0 auto;
+    // height: 100vh;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
@@ -163,7 +175,7 @@ html{
 
 .explore_btn_footer{
     margin-top: 3rem;
-    padding: 7% 20%;
+    padding: 5% 12%;
     background-color: transparent;
     border: 1px solid #777;
     // border-color: #f3f3f3;

@@ -5,6 +5,7 @@
         <article>
             <div class="header_bg_img">
                 <!-- <img src="https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg" alt="" srcset=""> -->
+                <div class="gallery_title">Gallery</div>
             </div>
         </article>
         <article class="gallery_item1">

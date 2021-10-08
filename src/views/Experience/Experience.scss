@@ -10,41 +10,48 @@ body,html{
     // // overflow-y: scroll;
     height: 100%;
 }
-html{
-    font-size: 20px;
-}
+// html{
+//     font-size: 20px;
+// }
 *{
     box-sizing: border-box;
 }
 
 //section1
-
-
 .section3_container{
     margin: 0;
     padding: 0;
-    background-color: #f3f3f3;
+    background-color: #eeeeee;
     overflow: hidden;
+    width: 100%;
 }
 .section3_content{
     width: 90%;
-    margin: 0 auto;
+    height: 100%;
+    padding-top: 15vh;
 }
-// .row{
-//     padding-right: 9vw;
-//     width: 100%;
-//     background-color: green;
+.row{
+    width: 100%;
+    height: 100%;
+}
+
+// .experience_container{
+//     background-color: #f3f3f3;
 // }
-.experience_container{
-    background-color: #f3f3f3;
-}
-@media screen and (max-width: 1240px)  {
+@media screen and (max-width: 1000px)  {
     .section3_container{
-        width: 80%;
+        margin-bottom: 10vh;
+    }
+    .section3_content{
+        width: 100%;
         overflow: hidden;
         margin: 0 auto;
 
     }
+    // .row:not(:first-child){
+    //     margin-top: 20vh;
+    // }
+}
 
     
-}
+// }

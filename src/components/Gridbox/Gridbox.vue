@@ -5,6 +5,8 @@
             <div class="section2_left">
             <!-- <h2>Exclusive to</h2> -->
             <h2>{{gridboxlist.head_expgrid}}</h2>
+            <h2>{{gridboxlist.head2_expgrid}}</h2>
+
             <div class="para2">
                 <p>
                    {{gridboxlist.para1_expgrid}}

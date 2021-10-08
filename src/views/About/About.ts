@@ -5,16 +5,23 @@ import Footer from '@/components/Footer/Footer.vue'
 import Grid from '@/components/Grid/Grid.vue'
 import Griddesign from '@/components/Griddesign/Griddesign.vue'
 import Gridbox from '@/components/Gridbox/Gridbox.vue'
+import Imagebg from '@/components/Imagebg/Imagebg.vue'
+
 
 
 @Options({
     components:{
-        Header, Para, Footer, Grid, Gridbox, Griddesign
+        Header, Para, Footer, Grid, Gridbox, Griddesign, Imagebg
     }
 })
 export default class About extends Vue {
     data() {
         return{
+            image_exp: {
+                image_title1: "Creating your",
+                image_title2: "perfect world",
+                image_src: require('../../assets/about.jpg')
+            },
             img_array: [
                 {
                     id: 1,
@@ -153,10 +160,11 @@ export default class About extends Vue {
             para_text: "Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real estate developer and operator of private residential club communities and resorts with a world-renowned portfolio of domestic and international properties.",
             gridboxobj:
             {
-                img_gridbox: require('../../assets/whatwedo.jpg'),
-                head_gridbox: "Our Mission",
-                para1_gridbox: "We don’t build buildings, but rather we build settings where families can create intergenerational memories and enrich their lives in exquisite and untouched sanctuaries. Everything we do is driven by the fundamental desire to create spaces where families can be together.",
-                para2_gridbox: "These settings offer a relaxed and comfortable sense of community featuring outstanding clubhouses, incredible residential offerings, premier golf courses, welcoming staff, world-class culinary offerings and our custom Outdoor Pursuits program; all offering the highest of service standards to enrich your experience."
+                img_expgrid: require('../../assets/whatwedo.jpg'),
+                head_expgrid: "Our Mission",
+                head2_expgrid: "",
+                para1_expgrid: "We don’t build buildings, but rather we build settings where families can create intergenerational memories and enrich their lives in exquisite and untouched sanctuaries. Everything we do is driven by the fundamental desire to create spaces where families can be together.",
+                para2_expgrid: "These settings offer a relaxed and comfortable sense of community featuring outstanding clubhouses, incredible residential offerings, premier golf courses, welcoming staff, world-class culinary offerings and our custom Outdoor Pursuits program; all offering the highest of service standards to enrich your experience."
             },
             gridlistobj:{
                 img1_grid: require('../../assets/builder2.jpg'),

@@ -1,7 +1,12 @@
 <template>
 <div class="about_container">
     <Header />
-    <div class="about_bg"></div>
+    <Imagebg v-bind:image_comp="image_exp" />
+    <!-- <div class="about_bg"></div>
+    <div class="bg_text">
+        <div class="text text1">Creating your</div>
+        <div class="text text2">perfect world</div>
+    </div> -->
     <Para v-bind:paralists="para_text" />
     <!-- <div class="section1_container">
         <div class="para1">
@@ -82,6 +87,10 @@
             <img src="../../assets/golfclubhouse.jpg" alt="" srcset="">
         </div>
     </div>
+    
+    <!-- <div class="rtl_container">
+        <Griddesign v-bind:gridlistdesign="gridlistobj" />
+    </div> -->
 
     <Grid v-bind:gridlist="gridlistobj" />
 
@@ -103,16 +112,15 @@
             
         </div>
     </div> -->
-    <div class="section7_container">
+    <!-- <div class="section7_container">
         <div class="section7">
             <img src="../../assets/whatwefooter.jpg" alt="" srcset="">
             <div class="text1">
                 <p>Our Worlds</p>
             </div>
         </div>
-    </div>
-
-    
+    </div> -->
+    <Footerworld />
 
    <Footer /> 
 </div>

@@ -5,14 +5,14 @@ import {Options, Vue} from 'vue-class-component';
         itemlist:{
             type: Object
         },
-        video_comp:{
+        image_comp:{
             type: Object
         }
     },
 })
 
 
-export default class Video extends Vue{
+export default class Imagebg extends Vue{
     // mounted(){
     //     console.log(this.video_comp);
     // }

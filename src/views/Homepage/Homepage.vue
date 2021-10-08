@@ -2,11 +2,13 @@
   <div class="world_container">
      <Header/>
     <main> 
-        <article class="video_bg">
+        <Video v-bind:video_comp="video_home" />
+        <!-- <article class="video_bg">
             <video autoplay muted loop>
                 <source src="https://player.vimeo.com/external/536055631.hd.mp4?s=7f6a254bdf972674127e5909312fa5de8b8d2453&profile_id=174&download=1">
             </video>
-        </article>
+        </article> -->
+
         <!-- <article class="world_item1">
             <article class="world_item1_content" v-for="(items,index) in img_array" :key="index">
                 <a href="#"> 
@@ -21,7 +23,7 @@
             <p>Discover the unique atmosphere of our private residential club communities. Once experienced. Never forgoteen. This is classic, comfortable, modern living in nature's most spectacular setting worldwide. Reassuring exclusive. generously welcoming. FInd your unique world - a place where families love to be; creating unforgettable moments, together</p>
         </article> -->
         <div class="home_section1_container">
-            <div class="home_section_bg">
+            <!-- <div class="home_section_bg"> -->
                 <div class="section_row1">
                     <div class="row1_content">
                         <div class="row1_left">
@@ -37,7 +39,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="home_section3_container">
             <div class="section_row3_item1">
@@ -46,8 +47,16 @@
                     <div class="our_world1"><p>our worlds</p></div>
                 </div>
                 <div class="section_item1_right">
-                    <button type="submit" class="arrow_right"></button>
-                    <button type="submit" class="arrow_right btn2"></button>
+                    <button type="submit" class="arrow_right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                        </svg>
+                    </button>
+                    <button type="submit" class="arrow_right btn2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="section_row3">
@@ -88,14 +97,14 @@
                     <div class="globe_item_left">
                         <div class="arrow_btn">
                             <div class="left_btn">
-                                <button type="submit">
+                                <button @click="leftclick(this.selectedValue.id)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                                     </svg>
                                 </button>
                             </div>
                             <div class="right_btn">
-                                <button type="submit" @click="leftclick(this.selectedValue.id)">
+                                <button @click="rightclick(this.selectedValue.id)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                                     </svg>
@@ -109,7 +118,7 @@
                                     <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"/>
                                     </svg>
                                 </div>
-                                <div class="temperature">{{selectedValue.weather}}</div>
+                                <div class="temperature">{{this.selectedValue.weather}}</div>
                             </div>
                             <div class="globe_item">
                                 <div class="icon_item">
@@ -117,7 +126,7 @@
                                     <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z"/>
                                     </svg>
                                 </div>
-                                <div class="temperature">{{selectedValue.wind}}</div>
+                                <div class="temperature">{{this.selectedValue.wind}}</div>
                             </div>
                             <div class="globe_item">
                                 <div class="icon_item">
@@ -126,16 +135,16 @@
                                         <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
                                     </svg>
                                 </div>
-                                <div class="temperature">{{selectedValue.compass}}</div>
+                                <div class="temperature">{{this.selectedValue.compass}}</div>
                             </div>      
 
                         </div>
                         <div class="globe_text">
                             <div class="globe_text1">
-                                {{selectedValue.world_text1}}
+                                {{this.selectedValue.world_text1}}
                             </div>
                             <div class="globe_text2">
-                                {{selectedValue.world_text2}}                            
+                                {{this.selectedValue.world_text2}}                            
                                 </div>
                         </div>
                         <div class="lat_long">
@@ -147,6 +156,7 @@
                                 <div class="text3">
                                     29.456123 N/-23.256987 W
                                 </div>
+                                
                             </div>
                         </div>
                         <!-- <h4>Scottsdale, Arizone</h4>
@@ -156,7 +166,7 @@
                     <div class="globe_item_right">
                         <div class="globe_content">
                         <div class="globe_img">
-                            <img src="../../assets/design1.jpg" alt="" srcset="">
+                            <img :src="this.selectedValue.world_image" alt="" srcset="">
                         </div>
                         </div>
                     </div>

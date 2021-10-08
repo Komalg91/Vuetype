@@ -5,9 +5,9 @@ body,html{
     // // overflow-y: scroll;
     height: 100%;
 }
-html{
-    font-size: 20px;
-}
+// html{
+//     font-size: 20px;
+// }
 *{
     box-sizing: border-box;
 }
@@ -205,11 +205,13 @@ grid-template-columns: repeat(3, 1fr);
 .globe_icons svg{
     margin-bottom: 0.5rem;
 }
-.left_btn svg{
+.left_btn svg, .right_btn svg{
     color: #FFFFFF;
+    cursor: pointer;
 }
 button{
     background-color: transparent;
+    border: 1px solid black;
 }
 .globe_icons{
     width: 60%;
