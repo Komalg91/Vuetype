@@ -14,11 +14,20 @@
                 </svg>
             </label>
             </div>
-            
             <ul class="nav_ul">
                 <li class="nav_li" v-for="(items,index) in header_items" :key="index">
                 <a href="#" class="nav_a">{{items.header_text}}</a>
                 </li>
+                <!-- <div class="ul_item1">
+                     <li class="nav_li_nav" v-for="(items,index) in header_items_nav" :key="index">
+                    <a href="#" class="nav_a_nav">{{items.header_text}}</a>
+                    </li>
+                    <li class="nav_li">Magazine</li>
+                    <li class="nav_li">Company</li>
+                    <li class="nav_li">Foundation</li>
+                    <li class="nav_li">Career</li> 
+
+                </div> -->
             </ul>
             </div>
         </div>

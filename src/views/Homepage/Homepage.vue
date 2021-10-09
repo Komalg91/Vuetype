@@ -66,8 +66,8 @@
                             <figure class="row3_figure">
                                 <img :src="items.world_image" alt="" srcset="">
                                 <div class="content">
-                                <h2 id="world_item_text1">{{items.world_text1}}</h2>
-                                <h2 id="world_item_text2">{{items.world_text2}}</h2>
+                                    <h2 id="world_item_text1">{{items.world_text1}}</h2>
+                                    <h2 id="world_item_text2">{{items.world_text2}}</h2>
                                 </div>
 
                             </figure>

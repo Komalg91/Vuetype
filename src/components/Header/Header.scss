@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
@@ -71,19 +75,22 @@ body {
       color: #FFFFFF;
       display: none;
   }
-  #nav_toggle{
+  #nav_toggle, #nav_toggle1{
       display: none;
   }
-
+  
   @media screen and (max-width: 900px) {
+      .nav_header{
+          background-color: black;
+      }
     .hamburger{
         display: inline-block;
     }
-    // #nav_toggle{
-    //     display: block;
-    // }
+    #nav_toggle, #nav_toggle1{
+        display: block;
+    }
     #nav_toggle {
-        display: inline-block;
+        display: none;
         padding: 13px;
       }
     .nav_a{
@@ -99,18 +106,23 @@ body {
     #nav_toggle:checked ~ .nav_ul{
     // // left: 0;
     // color: seagreen;
-    z-index: 100;
+    z-index: -1;
     height: 100vh;
     position: absolute;
     // top: 80px;
     background-color: #000;
-    color: rgb(190, 225, 65);
+    color: #FFFFFF;
     width: 100%;
     display: block;
     left: 0;
     padding: 0 10vw;
     text-align: left;
     animation: headeranimation 1s linear;
+    margin-top: 2.9rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    // align-items: center;
     }
 
     @keyframes headeranimation {
@@ -122,9 +134,21 @@ body {
             opacity: 1;
         }
     }
-  
+
+
     .nav_ul .nav_li .nav_a{
-        color: rgb(190, 225, 65);
+        color: #FFFFFF;
+        font-size: 2rem;
+        font-weight: 100;
+        font-family: 'Spectral', serif;
+        animation: ulanimation 1s linear;
+        padding: 2%;
+    }
+    .nav_ul .nav_li_nav .nav_a_nav{
+        color:  hsla(0,0%,100%,.5);
+        font-size: 1rem;
+        font-weight: 100;
+        font-family: 'Montserrat', sans-serif;
         animation: ulanimation 1s linear;
         padding: 2%;
     }
@@ -137,6 +161,7 @@ body {
             transform:translate3d(0,50%,0); 
         }
     }
+   
     // #nav_toggle:checked ~ .nav_header{
     //     background-color: #000;
     // }

@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body{
     padding: 0;
     margin: 0;
@@ -139,7 +142,7 @@ body{
 .section3_content{
     width: 90%;
     margin: 0 auto;
-    // height: 100vh;
+    // height: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
@@ -154,6 +157,7 @@ body{
 }
 .section2_press_container{
     padding-bottom: 15vh;
+    background-color: #FFFFFF;
 }
 .section2_press_content{
     display: grid;
@@ -185,6 +189,9 @@ body{
 @media screen and (max-width: 1000px) {
     .head1_press h2{
         font-size: 1.3rem;
+    }
+    .section3_content{
+        width: 100%;
     }
 }
 

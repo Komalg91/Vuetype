@@ -19,6 +19,20 @@ export default class Header extends Vue {
                 {
                     header_text: "Press"
                 }
+            ],
+            header_items_nav: [
+                {
+                    header_text: "Magazine",
+                },
+                {
+                    header_text: "Company",
+                },
+                {
+                    header_text: "Foundation",
+                },
+                {
+                    header_text: "Career",
+                }
             ]
         }
     }
